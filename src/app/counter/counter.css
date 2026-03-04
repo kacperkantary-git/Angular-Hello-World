@@ -1,0 +1,30 @@
+button {
+  width: 80px;
+  height: 50px;
+  border: 0;
+  background-color: white;
+  font-weight: bold;
+  font-size: 250%;
+}
+
+span {
+  font-size: 200%;
+  margin: 0 20px;
+  width: 20%;
+  border: 3px solid black;
+  display: inline-block;
+  text-align: center;
+}
+
+.counter-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 135px;
+  margin-left: -30%;
+}
+
+button:hover {
+   background-color: rgb(104, 107, 111);
+  transition: all 0.3s ease;
+}

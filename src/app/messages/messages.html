@@ -1,0 +1,14 @@
+<div class="messages-container">
+  
+  @for (msg of messages; track msg) {
+    <div>
+      <span>{{ msg }}</span>
+    </div>
+  }
+
+  <div class="input-row">
+    <input [(ngModel)]="newMessage" placeholder="Input">
+    <button (click)="addMessage(newMessage)">Send</button>
+  </div>
+
+</div>

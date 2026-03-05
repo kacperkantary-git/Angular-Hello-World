@@ -1,0 +1,9 @@
+<div class="ip-container">
+  <h2>IP Info</h2>
+  <div class="input-row">
+    <input [(ngModel)]="ip" placeholder="Wpisz adres IP" />
+    <button (click)="check()">Check</button>
+  </div>
+  <p *ngIf="country">Kraj: <strong>{{ country }}</strong></p>
+  <p *ngIf="error" class="error">{{ error }}</p>
+</div>

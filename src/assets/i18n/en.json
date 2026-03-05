@@ -1,0 +1,22 @@
+﻿{
+  "counter": {
+    "title": "Counter"
+  },
+  "messages": {
+    "title": "Messages",
+    "placeholder": "Enter text",
+    "send": "Send"
+  },
+  "ipinfo": {
+    "title": "IP Info",
+    "placeholder": "Enter IP address",
+    "check": "Check",
+    "country": "Country",
+    "error": "Failed to fetch data"
+  },
+  "nav": {
+    "counter": "Counter",
+    "messages": "Messages",
+    "ipinfo": "IP Info"
+  }
+}

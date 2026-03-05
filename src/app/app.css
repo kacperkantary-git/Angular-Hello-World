@@ -1,28 +1,72 @@
-.layout{
-    display: flex;
-    height: 100vh;
+.layout {
+  display: flex;
+  height: 100vh;
 }
 
-.sidebar{
-    width: 10vw;
-    background-color: rgb(104, 107, 111);
-    display: flex;
-    flex-direction: column;
-    padding: 0 20px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100vh;
+.sidebar {
+  width: 180px;
+  background-color: rgb(104, 107, 111);
+  display: flex;
+  flex-direction: column;
+  padding: 20px 15px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 98vh;
+  gap: 8px;
 }
 
-button {
-    border-radius: 5px;
-    border: 0;
-    background-color: rgb(31, 109, 77);
+.sidebar-brand {
+  color: white;
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.sidebar-links {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.sidebar-links button {
+  border-radius: 5px;
+  border: 0;
+  background-color: rgb(31, 109, 77);
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 0.95rem;
+  text-align: left;
+}
+
+.sidebar-links button:hover {
+  background-color: rgb(24, 85, 60);
+  transition: background 0.2s;
+}
+
+.lang-switcher {
+  margin-top: auto;
+  display: flex;
+  gap: 5px;
+}
+
+.lang-switcher button {
+  background: transparent;
+  color: white;
+  border: 1px solid rgba(255,255,255,0.4);
+  padding: 4px 10px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 0.85rem;
+}
+
+.lang-switcher button:hover {
+  background: rgba(255,255,255,0.15);
 }
 
 .content {
-  margin-left: 220px;
+  margin-left: 180px;
   padding: 40px 30px;
   flex: 1;
 }

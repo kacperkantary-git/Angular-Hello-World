@@ -1,0 +1,23 @@
+﻿{
+  "counter": {
+    "title": "Licznik"
+  },
+  "messages": {
+    "title": "Wiadomości",
+    "placeholder": "Wpisz tekst",
+    "send": "Wyślij"
+  },
+  "ipinfo": {
+    "title": "Info o IP",
+    "placeholder": "Wpisz adres IP",
+    "check": "Sprawdź",
+    "country": "Kraj",
+    "error": "Nie udało się pobrać danych"
+  },
+  "nav": {
+    "counter": "Licznik",
+    "messages": "Wiadomości",
+    "ipinfo": "Info o IP"
+  }
+}
+

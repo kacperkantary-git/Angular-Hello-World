@@ -1,9 +1,9 @@
 <div class="ip-container">
-  <h2>IP Info</h2>
+  <h2>{{ 'ipinfo.title' | translate }}</h2>
   <div class="input-row">
-    <input [(ngModel)]="ip" placeholder="Wpisz adres IP" />
-    <button (click)="check()">Check</button>
+    <input [(ngModel)]="ip" [placeholder]="'ipinfo.placeholder' | translate" />
+    <button (click)="check()">{{ 'ipinfo.check' | translate }}</button>
   </div>
-  <p *ngIf="country">Kraj: <strong>{{ country }}</strong></p>
-  <p *ngIf="error" class="error">{{ error }}</p>
+  <p *ngIf="country">{{ 'ipinfo.country' | translate }}: <strong>{{ country }}</strong></p>
+  <p *ngIf="error" class="error">{{ 'ipinfo.error' | translate }}</p>
 </div>

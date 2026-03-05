@@ -2,14 +2,15 @@
   <nav class="sidebar">
     <div class="sidebar-brand">MyApp</div>
     <div class="sidebar-links">
-    
-      <button [routerLink]="['/counter']">Counter</button>
-      <button [routerLink]="['/messages']">Messages</button>
-      <button [routerLink]="['/ip-info']">IP Info</button>
-   
+      <button [routerLink]="['/counter']">{{ 'nav.counter' | translate }}</button>
+      <button [routerLink]="['/messages']">{{ 'nav.messages' | translate }}</button>
+      <button [routerLink]="['/ip-info']">{{ 'nav.ipinfo' | translate }}</button>
+    </div>
+    <div class="lang-switcher">
+      <button (click)="setLang('en')">EN</button>
+      <button (click)="setLang('pl')">PL</button>
     </div>
   </nav>
-
   <div class="content">
     <router-outlet />
   </div>

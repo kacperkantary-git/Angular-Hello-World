@@ -1,18 +1,18 @@
 import { Component, inject } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
+import { TranslateModule } from '@ngx-translate/core';
 import { IpInfoService } from '../ip-info.service';
 
 @Component({
   selector: 'app-ip-info',
   standalone: true,
-  imports: [FormsModule, CommonModule],
+  imports: [FormsModule, CommonModule, TranslateModule],
   templateUrl: './ip-info.html',
   styleUrl: './ip-info.css'
 })
 export class IpInfoComponent {
   private ipInfoService = inject(IpInfoService);
-  
   ip: string = '';
   country: string = '';
   error: string = '';
@@ -25,7 +25,7 @@ export class IpInfoComponent {
           this.error = '';
         },
         error: () => {
-          this.error = 'Nie udało się pobrać danych';
+          this.error = '';
           this.country = '';
         }
       });

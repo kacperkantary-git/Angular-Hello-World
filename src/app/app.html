@@ -1,5 +1,15 @@
+<div class="layout">
+  <nav class="sidebar">
+    <div class="sidebar-brand">MyApp</div>
+    <div class="sidebar-links">
+    
+      <button [routerLink]="['/counter']">Counter</button>
+      <button [routerLink]="['/messages']">Messages</button>
+   
+    </div>
+  </nav>
 
-
-<app-counter></app-counter>
-<app-messages></app-messages>
-
+  <div class="content">
+    <router-outlet />
+  </div>
+</div>

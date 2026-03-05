@@ -1,12 +1,10 @@
 import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
-import { Counter } from './counter/counter';
-import { Messages } from './messages/messages';
+import { RouterOutlet, RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [Counter, Messages], 
+  imports: [ RouterLink, RouterOutlet], 
   templateUrl: './app.html',
   styleUrl: './app.css'
 })

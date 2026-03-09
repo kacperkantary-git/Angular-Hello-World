@@ -5,7 +5,8 @@ import { provideClientHydration, withEventReplay } from '@angular/platform-brows
 import { provideHttpClient, withFetch } from '@angular/common/http';
 import { provideTranslateService, TranslateLoader, TranslationObject } from '@ngx-translate/core';
 import { Observable, of } from 'rxjs';
-
+import { initializeApp } from 'firebase/app';
+import { firebaseConfig } from './firebase.config';
 import en from '../assets/i18n/en.json';
 import pl from '../assets/i18n/pl.json';
 
@@ -16,6 +17,8 @@ export class StaticTranslateLoader implements TranslateLoader {
     return of(translations[lang] || translations['en']);
   }
 }
+
+initializeApp(firebaseConfig);
 
 export const appConfig: ApplicationConfig = {
   providers: [

@@ -1,0 +1,19 @@
+<div class="table-container">
+  <h2>Contact Requests</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let req of requests">
+        <td>{{ req.firstName }}</td>
+        <td>{{ req.lastName }}</td>
+        <td>{{ req.email }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
